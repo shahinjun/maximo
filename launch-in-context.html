@@ -1,0 +1,38 @@
+<!--
+/*
+ * Licensed Materials - Property of IBM
+ *
+ * 5724-U18
+ *
+ * (C) Copyright IBM Corp. 2021 All Rights Reserved
+ *
+ * US Government Users Restricted Rights - Use, duplication or
+ * disclosure restricted by GSA ADP Schedule Contract with
+ * IBM Corp.
+ */
+/*
+ * This file should be used when LDAP is enabled and you are attempting to access a record on a specific work center page using an auto-generated link from Maximo.
+ * The URL should be changed to include the new file (launch-in-context.html) to redirect the user to the correct location.
+ *
+ * When attempting to login using this file, it will store the search parameters and location fragment.
+ * The search fragment will get removed in case an invalid login occurs. This file will keep track of what is needed in
+ * an LDAP environment to maintain the URL redirection to the correct location as well as open the correct record using the search params.
+ *
+ *  Example Link (original): https://mx-im-kaladin.fyre.ibm.com/maximo-x/index.html?uid=102#/inspector/detail
+ *  Example Link (new): https://mx-im-kaladin.fyre.ibm.com/maximo-x/launch-in-context.html?uid=102#/inspector/detail
+ *
+ */
+-->
+<html>
+<body>
+</body>
+<script>
+  if (window.location.hash) {
+    sessionStorage.setItem('locationHash', window.location.hash);
+    if (window.location.search) {
+      sessionStorage.setItem('locationSearch', window.location.search);
+    }
+  }
+  document.location = './index.html';
+</script>
+</html>

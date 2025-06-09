@@ -1,0 +1,24 @@
+{
+  "name": "lightning-ui",
+  "description": "Lightning UI",
+  "main": "",
+  "authors": [
+    "Sean Stuckless <sls@ca.ibm.com>"
+  ],
+  "license": "SEE LICENSE IN ../LICENSE.md",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "webcontent/script/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "web-component-tester": "^6.5.0"
+  },
+  "devDependencies": {
+    "web-component-tester": "^6.5.0"
+  }
+}

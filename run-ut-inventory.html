@@ -1,0 +1,54 @@
+<!--
+/*
+ * Licensed Materials - Property of IBM
+ *
+ * 5724-U18, 5737-M66
+ *
+ * (C) Copyright IBM Corp. 2018,2021 All Rights Reserved
+ *
+ * US Government Users Restricted Rights - Use, duplication or
+ * disclosure restricted by GSA ADP Schedule Contract with
+ * IBM Corp.
+ */
+-->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Maximo inventory unit tests</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="script/components/web-component-tester/browser.js"></script>
+    <link rel="stylesheet" href="css/test.css">
+  </head>
+
+  <body>
+    <script>
+      WCT.loadSuites([
+          'script/maximocards/inventory/item-master/maximo-inventory-item-list/test/maximo-inventory-item-list.html',
+          'script/maximocards/inventory/item-master/maximo-inventory-create-item/test/maximo-inventory-create-item.html',
+          'script/maximocards/inventory/item-master/maximo-measureunit/test/maximo-measureunit.html',
+          'script/maximocards/inventory/item-master/maximo-measureunit/maximo-addmeasureunit-flyout/test/maximo-addmeasureunit-flyout.html',
+          'script/maximocards/inventory/item-master/maximo-conversion-factor/test/maximo-conversion-factor.html',
+          'script/maximocards/inventory/item-master/maximo-inventory-item-detail/test/maximo-inventory-item-detail.html',
+          'script/maximocards/inventory/item-master/maximo-inventory-additemtostore/test/maximo-inventory-additemtostore.html',
+          'script/maximocards/inventory/item-master/maximo-inventory-item-upload/test/maximo-inventory-item-upload.html',
+          'script/maximocards/inventory/item-master/maximo-inventory-rotatingasset-list/test/maximo-inventory-rotatingasset-list.html',
+          'script/maximocards/inventory/maximo-rotating-asset/test/maximo-rotating-asset.html',
+          
+          'script/maximocards/inventory/storeroom/maximo-storeroom-card/test/maximo-storeroom-card.html',
+          'script/maximocards/inventory/storeroom/maximo-storeroom-create/test/maximo-storeroom-create.html',
+          'script/maximocards/inventory/storeroom/maximo-storeroom-list/test/maximo-storeroom-list.html',
+          'script/maximocards/inventory/storeroom/maximo-storeroom-reorder/test/maximo-storeroom-reorder.html',
+          'script/maximocards/inventory/storeroom/maximo-storeroom-detail/test/maximo-storeroom-detail.html',
+          'script/maximocards/inventory/storeroom/maximo-storeroom-detail/maximo-storeroom-issueitem/test/maximo-storeroom-issueitem.html',
+          
+          'script/maximocards/inventory/reservations/maximo-reservation-list/test/maximo-reservation-list.html',
+          'script/maximocards/inventory/reservations/maximo-inventory-issued-item/test/maximo-inventory-issued-item.html',
+          'script/maximocards/inventory/reservations/maximo-inventory-issued-item/maximo-issued-item-return-flyout/test/maximo-issued-item-return-flyout.html'
+          
+      ]);
+    </script>
+  </body>
+</html>
